@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>HangMan</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="http://ryanwaite28.github.io/my-cdn/css/bootstrap.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 785px)" href="mobile-style.css">
+		<script src="http://ryanwaite28.github.io/my-cdn/js/angular.js"></script>-->
+		<script src="http://ryanwaite28.github.io/my-cdn/js/jquery.js"></script>
+		<script src="script.js"></script>
+		<style>
+			.hang-letters {
+				color: white;
+			}
+
+			.i-a, .i-b, .i-c, .i-d, .i-e, .i-f, .i-g,
+			.i-h, .i-i, .i-j, .i-k, .i-l, .i-m, .i-n,
+			.i-o, .i-p, .i-q, .i-r, .i-s, .i-t, .i-u,
+			.i-v, .i-w, .i-x, .i-y, .i-z,
+			{
+				color: white;
+			}
+			
+			#i-a, #i-b, #i-c, #i-d, #i-e, #i-f, #i-g,
+			#i-h, #i-i, #i-j, #i-k, #i-l, #i-m, #i-n,
+			#i-o, #i-p, #i-q, #i-r, #i-s, #i-t, #i-u,
+			#i-v, #i-w, #i-x, #i-y, #i-z,
+			{
+				color: white;
+			}
+		</style>
+	</head>
+	
+	<body ng-app="myApp" ng-controller="masterCtrl">
+
+		<div id="cont">
+		
+			<h1 style="text-align: center;">HangMan</h1>
+			<hr>
+			<center><input type="button" value="Click" onclick="playGame()" style="display: block; margin: 50px;"/></center>
+			<div id="message"></div>
+			<br>
+			<p id="letter-count" style="margin: 15px; padding: 15px; border: 1px solid black; width: 50px; height: 50px;"></p>
+			
+		</div>
+
+	</body>
+
+</html>
